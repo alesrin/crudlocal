@@ -1,0 +1,11 @@
+<!-- PASO 4 - MOSTRAR UNA LISTA DE DATOS -->
+
+<h2>Lista de Dato</h2>
+
+<ul>
+  <li *ngFor="let dato of datos">
+    {{ dato.nombre }} - {{ dato.edad }} - {{ dato.profesion }}
+    <button (click)="eliminarDato(dato.id)">Eliminar</button>
+    <button (click)="editarDato(dato)">Editar</button>
+  </li>
+</ul>
